@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Checkbox = ({ children }) => {
+  // Lift up common state and method to the top of the parent component
   const [checked, setChecked] = useState(true);
   const allChildren = React.Children.map(children, child => {
     const clone = React.cloneElement(child, {
