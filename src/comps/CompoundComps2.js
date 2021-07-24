@@ -14,6 +14,8 @@ const Checkbox = ({ children }) => {
     // `);
     // }
 
+    console.log(child);
+
     if (!whiteList.includes(child.type)) {
       // * create whitelist
       throw new Error(`
@@ -58,7 +60,7 @@ const CompoundComps2 = () => {
   return (
     <Checkbox>
       <Label>Checkbox Label</Label>
-      <Cuz />
+      {/* <Cuz /> */}
       <CheckboxInput />
     </Checkbox>
   );
