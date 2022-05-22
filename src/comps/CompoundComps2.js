@@ -4,7 +4,7 @@ const Cuz = () => <div>Cuz</div>;
 
 const Checkbox = ({ children }) => {
   const [checked, setChecked] = useState(true);
-  // * Children probably DOM elements, functions, classes, null
+  // * Children are probably DOM elements, functions, classes, null
   const allChildren = React.Children.map(children, child => {
     // if (typeof child.type === 'string') {
     //   return null;
